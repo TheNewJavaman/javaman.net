@@ -1,0 +1,90 @@
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, user-scalable=no">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100&display=swap">
+    <style>
+        body {
+            margin: 0;
+
+            height: 100%;
+
+            display: grid;
+            grid-template-rows: auto;
+            grid-template-columns: 100%;
+            grid-template-areas:
+                "content";
+        }
+
+        #content {
+            grid-area: content;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        #card {
+            flex: 1;
+            width: 75%;
+            border-radius: 20px;
+            overflow: hidden;
+            background-color: rgba(255, 255, 255, 200);
+
+            display: grid;
+            grid-template-rows: 0px;
+            grid-template-columns: 100%;
+            grid-template-areas:
+                "go";
+        }
+
+        #go {
+            overflow: hidden;
+            position: fixed;
+            bottom: 50px;
+
+            margin: 0;
+            vertical-align: bottom;
+            grid-area: go;
+
+            border-radius: 25px;
+            border: 2px solid white;
+
+            padding: 10px;
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+
+        #go p {
+            margin: 0;
+
+            font-size: 7.5vh;
+            font-family: Roboto;
+            font-weight: 100;
+            text-align: center;
+            user-select: none;
+
+            color: white;
+
+            border: 2px rgba(255, 255, 255, 200);
+        }
+
+        #go:hover {
+            cursor: pointer;
+        }
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <script src="script.js"></script>
+
+    <title>Colors</title>
+</head>
+
+<body>
+    <div id="content">
+        <div id="go">
+            <p>Go</p>
+        </div>
+    </div>
+</body>
+
+</html>
